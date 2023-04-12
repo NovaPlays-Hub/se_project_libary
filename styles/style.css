@@ -265,7 +265,7 @@
   margin: 0;
 }
 
-.staff-card {
+.staff__cards {
   max-width: 760px;
   margin-top: 68px;
   display: flex;
@@ -454,7 +454,7 @@
   align-items: center;
 }
 
-.footer_column-link:hover {
+.footer__column-link:hover {
   color: #c1c1c1;
 }
 
