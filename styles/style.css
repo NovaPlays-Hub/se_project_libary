@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0 auto;
-  font-family: "Helvetica Neue, Arial, sans-serif";
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -51,8 +51,8 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 150px;
+  margin-bottom: 32px;
 }
 
 .header__description {
@@ -101,6 +101,7 @@
   align-items: start;
   justify-content: space-between;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .events__content {
@@ -188,37 +189,32 @@
 }
 
 .person_name_feynman {
-  position: absolute;
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  position: absolute;
   top: 96px;
   right: 125px;
 }
 
 .person_name_cannon {
-  position: absolute;
   bottom: 18px;
   right: 216px;
 }
 
 .person_name_mitchell {
-  position: absolute;
   bottom: 82px;
   left: 142px;
 }
 
 .person_name_tarter {
-  position: absolute;
   top: 79px;
   left: 159px;
 }
 
 .person__image {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .person__image_size_l {
@@ -255,6 +251,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: #f2f2f2;
 }
 
 .staff__subtitle {
@@ -263,17 +260,21 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
+  color: #f2f2f2;
 }
 
 .staff__cards {
-  max-width: 760px;
-  margin-top: 68px;
   display: flex;
-  justify-content: center;
+  position: relative;
+  max-width: 760px;
+  padding-top: 68px;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 40px;
   list-style-type: none;
-  padding-left: 0%;
+  padding-inline-start: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .card {
@@ -312,9 +313,7 @@
   color: #838383;
   margin-top: auto;
 }
-.staff-picks-background-image {
-  background: transparent;
-}
+
 .membership {
   padding: 100px 0 140px;
   background-color: #f2f2f2;
@@ -334,7 +333,7 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   gap: 40px;
 }
@@ -393,6 +392,9 @@
 .about__paragraph {
   margin: 0 0 32px;
 }
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
 
 .about__circle {
   background-color: #2f80ed;
@@ -408,7 +410,7 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: #fff;
   padding: 60px 102px 60px 80px;
 }
@@ -437,6 +439,9 @@
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
+}
+.footer__list-item:last-of-type {
   margin-bottom: 0;
 }
 
